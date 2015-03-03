@@ -18,3 +18,7 @@ In Hourglass mode, as one player's time goes down, the other player's time goes 
 
 ###Keywords
 Chess Clock, DIY Chess Clock, Atmel, Attiny, Blitz, Bullet, Chess.
+
+- - - 
+### License
+Licensed under the MIT License. See LICENSE.txt. 
