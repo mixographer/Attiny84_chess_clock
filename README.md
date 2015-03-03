@@ -9,8 +9,8 @@ in three different modes.
 ## Sudden Death
 In Sudden-death mode, your clock runs when it is your turn, and you lose when you run out of time. 
 
-## Fischer Delay
-In Fischer Delay mode, an increment is added at the start of each turn. In Fischer Increment mode you can actually 
+## Fischer Increment
+In Fischer Increment mode, an increment is added at the start of each turn. In Fischer Increment mode you can actually 
 add time to your total if you move faster than the increment amount. 
 
 ## Hourglass
@@ -38,11 +38,11 @@ You will be prompted to set the mode of the clock.
 The default mode is Sudden Death or Guillotine. If you would like this mode simply hit the "Pause/Enter" button. 
 The time period will be displayed for both players, and a play can begin. 
 
-#### Fischer Delay
-Fischer delay mode can be selected by pressing the 'Player 1/Down' button at the 'Set Mode' prompt. 'Fischer' is displayed on the clock and you can accept Fischer delay mode by pressing the 'Pause/Enter' button. 
+#### Fischer Increment
+Fischer increment mode can be selected by pressing the 'Player 1/Down' button at the 'Set Mode' prompt. 'Fischer' is displayed on the clock and you can accept Fischer delay mode by pressing the 'Pause/Enter' button. 
 
 Set the increment. 
-In Fischer delay mode, an increment period is required. The clock will prompt for the increment with the display "Inc?: 0:05." Set the desired increment with the 'Player 1/Down' and 'Player 2/Up' buttons. The increment adjusts in 1 second increments. Accept the increment with the 'Pause/Enter' button, the time period will be displayed and play can begin.
+In Fischer increment mode, an increment period is required. The clock will prompt for the increment with the display "Inc?: 0:05." Set the desired increment with the 'Player 1/Down' and 'Player 2/Up' buttons. The increment adjusts in 1 second increments. Accept the increment with the 'Pause/Enter' button, the time period will be displayed and play can begin.
 
 #### Hourglass
 Hourglass mode can be selected by pressing the 'Player2/Up' button at the 'Set Mode' prompt. Hourglass mode operates like an hourglass. As time is decreasing for one player, it is increasing for the other player. Press the 'Pause/Enter' button and play can begin. 
