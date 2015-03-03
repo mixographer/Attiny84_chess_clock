@@ -48,7 +48,9 @@ In Fischer delay mode, an increment period is required. The clock will prompt fo
 Hourglass mode can be selected by pressing the 'Player2/Up' button at the 'Set Mode' prompt. Hourglass mode operates like an hourglass. As time is decreasing for one player, it is increasing for the other player. Press the 'Pause/Enter' button and play can begin. 
 
 ## Play
-Once the time period and mode have been set, the clock is ready to use. If during play, the clock needs to be paused for any reason, the 'Pause/Enter' will stop the clock at the current time. Play may be restarted by pressing either the 'Player1' or 'Player 2' button.
+Once the time period and mode have been set, the clock is ready to use. When time runs out for a player and indicator light will illuminate and the word "FLAG" will appear for the player who ran out of time. After a short period of time the clock will shut down. To start a new game, press the 'Start/Reset' button. 
+
+If during play, the clock needs to be paused for any reason, the 'Pause/Enter' will stop the clock at the current time. Play may be restarted by pressing either the 'Player1' or 'Player 2' button. Do not leave the clock paused for extended periods of time as that will prevent the clock from powering down and will drain the batteries. 
 
 ###Keywords
 Chess Clock, DIY Chess Clock, Atmel, Attiny, Blitz, Bullet, Chess.
