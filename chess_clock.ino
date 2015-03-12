@@ -149,7 +149,7 @@ char player2DisplayTime[6] = "";
 char incrementDisplayTime[6] = "";
 //store the different modes here
 //mode 1 is Fischer, 2  delay, 3 Hourglass, undef is sudden death:
-byte gameMode;
+byte gameMode = 2 ;
 
 void setup(){
   pinMode(button1, INPUT_PULLUP);
@@ -231,7 +231,7 @@ void setMode(){
     displayChar('e', 7);
     displayChar(':', 8);
     displayChar(' ', 9);
-    
+    delay(500);
     while(modeSet == false){
        button1state = digitalRead(button1);
        button2state = digitalRead(button2);
