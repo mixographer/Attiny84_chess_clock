@@ -220,6 +220,7 @@ void displayBegin()
 
 
 void setMode(){
+    // modes: 1=Fischer....  2=guillotine... 3= hourglass
     displayChar('S', 0);
     displayChar('e', 1);
     displayChar('t', 2);
@@ -230,6 +231,7 @@ void setMode(){
     displayChar('e', 7);
     displayChar(':', 8);
     displayChar(' ', 9);
+    
     while(modeSet == false){
        button1state = digitalRead(button1);
        button2state = digitalRead(button2);
@@ -254,8 +256,25 @@ void setMode(){
       
          } else if (button1state != lastButton1state){
            if (button1state == LOW){
-              gameMode = 1; //fischer
-              //refreshClocks();
+              gameMode --; 
+              if (gameMode < 1) { 
+                 gameMode = 3;
+              }
+          }
+          lastButton1state = button1state;
+      
+         } else if (button3state != lastButton3state){
+            if (button3state == LOW){
+              gameMode ++; //delay 
+              if (gameMode > 3 ) { 
+                 gameMode = 1;
+              }
+         }
+         lastButton3state = button3state;
+         
+       } else {
+       
+       if (gameMode == 1){
               delay(10);
               displayChar('F', 0);
               displayChar('i', 1);
@@ -267,13 +286,20 @@ void setMode(){
               displayChar(' ', 7);
               displayChar(' ', 8);
               displayChar(' ', 9);
-              
-          }
-          lastButton1state = button1state;
-      
-         } else if (button3state != lastButton3state){
-            if (button3state == LOW){
-              gameMode = 3; //delay
+       
+       } else if (gameMode == 2){
+              delay(10);
+              displayChar('S', 0);
+              displayChar('u', 1);
+              displayChar('d', 2);
+              displayChar('d', 3);
+              displayChar('e', 4);
+              displayChar('n', 5);
+              displayChar('D', 6);
+              displayChar('e', 7);
+              displayChar('a', 8);
+              displayChar('t', 9);
+       }  else if (gameMode == 3){
               delay(10);
               displayChar('H', 0);
               displayChar('o', 1);
@@ -285,11 +311,11 @@ void setMode(){
               displayChar('s', 7);
               displayChar('s', 8);
               displayChar(' ', 9);
-         }
-         lastButton3state = button3state;
-       } else {}
-   } 
+     }
 }
+}
+}
+
  
  
 void setTime(){
