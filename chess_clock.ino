@@ -132,7 +132,7 @@ double player2LastCheck = millis();
 boolean isPlayer1Turn = false;
 boolean isPlayer2Turn = false;
 boolean gameOver = false;
-// are various modes set? Fischer, Bronstein etc
+// are various modes/times set? Fischer, Bronstein etc
 boolean modeSet = false;
 boolean timeSet = false;
 boolean incrementSet = false;
@@ -148,7 +148,7 @@ char player1DisplayTime[6] = "";
 char player2DisplayTime[6] = "";
 char incrementDisplayTime[6] = "";
 //store the different modes here
-//mode 1 is Fischer, 2  delay, 3 Hourglass, undef is sudden death:
+//mode 1 is Fischer, 2 is Sudden Death, 3 Hourglass, 
 byte gameMode = 2 ;
 
 void setup(){
@@ -213,13 +213,10 @@ void displayBegin()
 {
   //reset the display
   writeByte(0xC0);
-}
-// end of display functions
+} // end of display functions
 
 
-
-
-void setMode(){
+void setMode(){ //set the mode
     // modes: 1=Fischer....  2=guillotine... 3= hourglass
     displayChar('S', 0);
     displayChar('e', 1);
@@ -314,7 +311,7 @@ void setMode(){
      }
 }
 }
-}
+} // end setMode
 
  
  
@@ -370,10 +367,9 @@ void setTime(){
       lastButton3state = button3state;
     } else {}
   } 
-}
-     //end setTime
+} //end setTime
 
-
+// for Fischer mode only
 void setIncrement(){
   player1Time = 120000;
   player2Time = 120000;
@@ -417,11 +413,8 @@ void setIncrement(){
       displayIncrement();
     }
   } 
-} //end setTime
+} //end setIncrement
 
-
-
-    
  
 void loop(){
   if (timeSet == false){
@@ -463,7 +456,7 @@ void loop(){
   } else {
   }
   updateDisplay();
-}
+} // end loop()
 
 void updateDisplay(){;
     for(int i = 0; i < 5; i++) {
@@ -516,9 +509,8 @@ void updatePlayer1Time(){
   }
   
   refreshClocks();
-  }
+}
   
-//}
 
 void flagPlayer(int playerNumber){
   digitalWrite(3, HIGH);
