@@ -239,15 +239,7 @@ void setMode(){ //set the mode
               delay(10);
               modeSet = true;
               delay(50);
-              displayChar('S', 0);
-              displayChar('e', 1);
-              displayChar('t', 2);
-              displayChar(' ', 3);
-              displayChar('T', 4);
-              displayChar('i', 5);
-              displayChar('m', 6);
-              displayChar('e', 7);
-              displayChar(':', 8);
+
            }
            lastButton2state = button2state;
       
