@@ -36,16 +36,16 @@ You will be prompted to set the mode of the clock.
 
 #### Sudden Death
 The default mode is Sudden Death or Guillotine. If you would like this mode simply hit the "Pause/Enter" button. 
-The time period will be displayed for both players, and a play can begin. 
+The time period will be displayed for both players, and a play can begin. You can also scroll through the all modes with the 'Player 1/Down' and Player 2/Up' buttons. 
 
 #### Fischer Increment
-Fischer increment mode can be selected by pressing the 'Player 1/Down' button at the 'Set Mode' prompt. 'Fischer' is displayed on the clock and you can accept Fischer delay mode by pressing the 'Pause/Enter' button. 
+Fischer increment mode can be selected by pressing the 'Player 1/Down' or 'Player2/Up button at the 'Set Mode' prompt. When 'Fischer' is displayed on the clock you can accept Fischer delay mode by pressing the 'Pause/Enter' button. 
 
 Set the increment. 
 In Fischer increment mode, an increment period is required. The clock will prompt for the increment with the display "Inc?: 0:05." Set the desired increment with the 'Player 1/Down' and 'Player 2/Up' buttons. The increment adjusts in 1 second increments. Accept the increment with the 'Pause/Enter' button, the time period will be displayed and play can begin.
 
 #### Hourglass
-Hourglass mode can be selected by pressing the 'Player2/Up' button at the 'Set Mode' prompt. Hourglass mode operates like an hourglass. As time is decreasing for one player, it is increasing for the other player. Press the 'Pause/Enter' button and play can begin. 
+Hourglass mode can be selected by pressing the 'Player 1/Down' or 'Player2/Up' button at the 'Set Mode' prompt. Hourglass mode operates like an hourglass. As time is decreasing for one player, it is increasing for the other player. Once 'Hourglass' is displayed, press the 'Pause/Enter' button and play can begin. 
 
 ## Play
 Once the time period and mode have been set, the clock is ready to use. When time runs out for a player and indicator light will illuminate and the word "FLAG" will appear for the player who ran out of time. After a short period of time the clock will shut down. To start a new game, press the 'Start/Reset' button. 
