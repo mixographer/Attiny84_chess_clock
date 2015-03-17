@@ -1,4 +1,3 @@
-
 #include <avr/sleep.h>
 #include <avr/pgmspace.h>
 #include <avr/power.h>
@@ -239,8 +238,8 @@ void setMode(){ //set the mode
               delay(10);
               modeSet = true;
               delay(50);
-
            }
+           delay(50);
            lastButton2state = button2state;
       
          } else if (button1state != lastButton1state){
@@ -250,6 +249,7 @@ void setMode(){ //set the mode
                  gameMode = 3;
               }
           }
+          delay(50);
           lastButton1state = button1state;
       
          } else if (button3state != lastButton3state){
@@ -259,6 +259,7 @@ void setMode(){ //set the mode
                  gameMode = 1;
               }
          }
+         delay(50);
          lastButton3state = button3state;
          
        } else {
@@ -331,10 +332,9 @@ void setTime(){
       refreshClocks();
       delay(500);
       timeSet = true;
-     
       }
-      lastButton2state = button2state;
-      
+      delay(250);
+      lastButton2state = button2state;  
     } else if (button1state != lastButton1state){
       if (button1state == LOW){
         if (player1Time <= 60000){
@@ -346,8 +346,8 @@ void setTime(){
           player2Time -= 60000;
           refreshClocks();
           }
-      
       }
+      delay(250);
       lastButton1state = button1state;
       
     } else if (button3state != lastButton3state){
@@ -356,6 +356,7 @@ void setTime(){
       player2Time += 60000;
       refreshClocks();
       }
+      delay(250);
       lastButton3state = button3state;
     } else {}
   } 
@@ -387,19 +388,21 @@ void setIncrement(){
       delay(500);
       incrementSet = true;
       }
+      delay(100);
       lastButton2state = button2state;
       
     } else if (button1state != lastButton1state){
       if (button1state == LOW){
       increment -= 1000;
-      
       }
+      delay(100);
       lastButton1state = button1state;
       
     } else if (button3state != lastButton3state){
       if (button3state == LOW){
       increment += 1000;
       }
+      delay(100);
       lastButton3state = button3state;
     } else {
       displayIncrement();
@@ -595,6 +598,3 @@ void startPlayer2Turn () {
   player2LastCheck = millis();
 }
 
-
-  
- 
