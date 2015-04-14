@@ -364,8 +364,8 @@ void setTime(){
 
 // for Fischer mode only
 void setIncrement(){
-  player1Time = 120000;
-  player2Time = 120000;
+  //player1Time = 120000;
+  //player2Time = 120000;
   displayChar('S', 0);
   displayChar('e', 1);
   displayChar('t', 2);
